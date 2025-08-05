@@ -6,16 +6,16 @@ const EgestorERP = () => {
   const egestorLink = "https://www.egestor.com.br/afl/15162";
 
   return (
-    <section className="py-16 bg-background overflow-hidden">
+    <section className="py-16 bg-white overflow-hidden">
       <div className="container px-4 mx-auto max-w-6xl">
         {/* Two-column layout for desktop, stack on mobile */}
         <div className="flex flex-col md:flex-row md:items-center md:gap-8 lg:gap-12 mb-10">
           {/* Left column - Header Text */}
           <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0 animate-fade-in">
             <a href={egestorLink} target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-90 transition-opacity">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 leading-tight">Sistema de gestão empresarial</h2>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">Sistema de gestão empresarial</h2>
             </a>
-            <p className="text-lg md:text-xl text-muted-foreground font-normal">
+            <p className="text-lg md:text-xl text-gray-700 font-normal">
               Dobre seus lucros otimizando sua gestão
             </p>
           </div>
