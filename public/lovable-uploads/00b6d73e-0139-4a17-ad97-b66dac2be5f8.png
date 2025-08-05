@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<base href="https://egestor.com.br:443/">
+		<link rel="canonical" href="https://egestor.com.br/404.php">				<meta name="format-detection" content="telephone=no" />
+		<meta name="google-site-verification" content="fbjeUlMx0NsJ3-SbB-QKMNg8SOUNFzwQL7LPLGI60_U" />
+		<meta name="author" content="Zipline Tecnologia Ltda.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="eGestor - ERP online. Sistema de gestão empresarial para micro e pequenas empresas. Controle financeiro, gestão de estoque e muito mais!" />
+		<title>eGestor - Sistema de Gestão Empresarial - ERP Online</title>
+
+		<!-- Google Tag Manager (tem outro no Body)-->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-M4Q4KKF8');</script>
+		<!-- End Google Tag Manager -->
+
+		<!-- Json de manifesto -->
+
+		<link rel="manifest" href="manifest.json">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="eGestor">
+		<meta name="apple-mobile-web-app-title" content="eGestor">
+		<meta name="theme-color" content="#fff">
+		<meta name="msapplication-navbutton-color" content="#e74247">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="msapplication-starturl" content="www.egestor.com.br">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+		<!-- facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="eGestor - O sistema de gestão fácil e online"/>
+		<meta property="og:url" content="https://egestor.com.br:443/" />
+		<meta property="og:image" content="https://egestor.com.br:443/assets/img/egestor-fb.jpg"/>
+		<meta property="og:site_name" content="eGestor"/>
+		<meta property="og:description" content="O eGestor é um software online para gestão de micro e pequenas empresas. Controle financeiro, vendas, nota fiscal eletrônica e controle de estoque" />
+		<!-- end facebook -->
+
+		<link href="assets/css/main.css?36" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/icons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/icons/safari-pinned-tab.svg" color="#ef5b5b">
+    <meta name="msapplication-TileColor" content="#ef5b5b">
+    <meta name="theme-color" content="#ffffff">
+
+		<!-- Include JS -->
+		<script type="text/javascript" src="assets/site/js/jquery-3.3.1.min.js?6"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/funcoes.js?8"></script>
+		<script type="text/javascript" src="assets/site/js/javascript.js?19"></script>
+		<script type="text/javascript" async src="assets/site/js/jquery.validate.js?4"></script>
+		<script type="text/javascript" async src="js/index.class.js?6"></script>
+		<script type="text/javascript">
+			var aceitouCookies = '';
+			var aceitouCookies = "";
+		</script>
+
+						<!-- Script para o Google - Rich content -->
+
+				<script type="application/ld+json">
+				{ "@context" : "https://schema.org",
+				  "@type" : "Organization",
+				  "url" : "https://www.egestor.com.br/",
+				  "name" : "eGestor - Sistema de Gestão Empresarial - ERP Online",
+				  "description" : "eGestor - ERP online. Sistema de gestão empresarial para micro e pequenas empresas. Controle financeiro, gestão de estoque e muito mais!",
+				  "logo": "https://www.egestor.com.br/assets/img/logo.png",
+				  "sameAs" : ["https://www.youtube.com/eGestorERP",
+					"https://www.facebook.com/eGestorERP/",
+					"https://www.instagram.com/egestorerp/",
+					"https://www.linkedin.com/company/egestor/",
+					"https://open.spotify.com/show/0G3R7gTIgUODsDji6K3kpW"]
+				}
+				</script>
+
+
+									<!-- Global site tag (gtag.js) - Google AdWords: 1039518902 -->
+							<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1039518902"></script>
+							<script>
+							function aceitouCookiesGoogleAds(){
+							  window.dataLayer = window.dataLayer || [];
+							  function gtag(){dataLayer.push(arguments);}
+							  gtag('js', new Date());
+
+							  gtag('config','AW-1039518902', {'allow_enhanced_conversions':true});
+							  gtag('config', 'G-9E3QH2XS3Q');
+
+							  var g_EC = {
+							    email: '#email',
+							    phone_number: '#fone2',
+							  };
+							  var g_countrycode = '+55';
+
+							  var g_country = 'Brazil';
+
+							  window.g_setupEC = Object.create(null);
+							  window.g_ECObj = Object.create(null);
+
+							  document.addEventListener('input', g_setup_ECObj);
+							  function g_setup_ECObj(e) {
+							    var input = e.target;
+							    for(i in g_EC) {
+							      if(input.matches(g_EC[i])) {
+							        g_setupEC['g_' + i] = input.value;
+							      }
+							    }
+							    g_save_toECObj();
+							  }
+
+							  function g_save_toECObj() {
+							    for(i in g_EC) {
+							       if(g_setupEC['g_' + i]) {
+							        if(i == 'email' && g_validateEmail(g_setupEC['g_' + i])) {
+							          window.g_ECObj[i] = g_setupEC['g_' + i];
+							        }
+							        if(i == 'phone_number' && window.g_ECObj['email']) {
+							          window.g_ECObj[i] = g_setupEC['g_' + i];
+							          window.g_ECObj[i] = g_countrycode + g_ECObj[i].replace(/\D/g, '');
+							        }
+							      }
+							    }
+							  }
+
+							  //Validações (não mexer)
+							  function g_validateEmail(email) {
+							    return /\S+@\S+\.\S+/.test(email);
+							  }
+
+							  function g_validateString(str) {
+							    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+							  }
+
+							  g_save_toECObj();
+
+							};
+							</script>
+
+							<!-- Global site tag (gtag.js) - Google Analytics -->
+							<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4613391-2"></script>
+							<script>
+							  window.dataLayer = window.dataLayer || [];
+							  function gtag(){dataLayer.push(arguments);}
+							  gtag('js', new Date());
+							  // Esse if abaixo não é do código original do analytics. Ele permite que sejam contabilizados os acessos no site mas desabilita o visitante da lista de remarketing até que ele aceite os Cookies.
+							  if (aceitouCookies == 'sim'){
+							  	//nada acontece
+							  }else{
+							  	gtag('set', 'allow_google_signals', false);
+							  }
+							  gtag('config', 'UA-4613391-2', { 'anonymize_ip': true });
+							  gtag('config', 'G-9E3QH2XS3Q', { 'anonymize_ip': true });
+							</script>
+
+
+		</script>
+	</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4Q4KKF8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- HEADER -->
+<div id="header" class="">
+ <div class="container">
+	<nav class="navbar navbar-expand-lg navbar-light">
+	  <div class="container">
+		 <a id="logo" class="navbar-brand" href="index.php">
+			<img src="assets/img/logo.png" class="img-fluid" alt="Home">
+		 </a>
+		 <button id="menuMobile" class="navbar-toggler btn link-primary collapsed" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-bars"></i>
+		 </button>
+		 <div class="collapse navbar-collapse justify-content-end text-end" id="menu">
+			<ul class="navbar-nav">
+				<li class="nav-item align-self-md-center" id="afl-menu" style="opacity:0;">
+				<a class="nav-link active" aria-current="page" href="representantes.php">Seja representante</a>
+				</li>
+				<li class="nav-item align-self-md-center">
+				<a class="nav-link active" aria-current="page" href="recursos/loja-virtual.php">E-commerce</a>
+				</li>
+			  <li class="nav-item align-self-md-center">
+				 <a class="nav-link" href="contato.php">Contato</a>
+			  </li>
+			  <li class="nav-item align-self-md-center dropdown menuDropdownSobre">
+			    <a class="nav-link dropdown-toggle" href="#" role="button" id="menuSobre" data-bs-toggle="dropdown" aria-expanded="false">
+			      Sobre
+			    </a>
+
+			    <ul class="menuSobre dropdown-menu" aria-labelledby="menuSobre">
+			      <li><a class="dropdown-item" href="sobre.php">A empresa</a></li>
+			      <li><hr class="d-block d-md-none dropdown-divider"></li>
+			      <li><a class="dropdown-item" href="segmentos.php">Atuação</a></li>
+			      <li><hr class="d-block d-md-none dropdown-divider"></li>
+			      <li><a class="dropdown-item" href="funcionalidades.php">Funcionalidades</a></li>
+			      <li><hr class="d-block d-md-none dropdown-divider"></li>
+			      <li id="planosMenu" style="opacity: 0;"><a class="dropdown-item" href="planos.php">Planos</a></li>
+			      <li><hr class="d-block d-md-none dropdown-divider"></li>
+			    </ul>
+			  </li>
+			  <!-- <li class="nav-item align-self-md-center">
+				 <a class="nav-link" href="sobre.php">Sobre</a>
+			  </li> -->
+			  <li class="nav-item align-self-md-center">
+				 <a class="btn button-primary btn-primary button" href="https://www.egestor.com.br/cadastro.php">Teste grátis</a>
+			  </li>
+			  <li class="nav-item align-self-md-center">
+				 <a class="btn button-shadow btn-primary button" href="https://www.egestor.com.br/acesse.php">Acesse</a>
+			  </li>
+			</ul>
+		 </div>
+	  </div>
+	</nav>
+ </div>
+</div>
+<!-- //HEADER -->
+
+<!-- WHATSAPP -->
+
+<div id="opcoesWhatsapp" style="opacity: 0;">
+  <a target="_blank" class="text-center text-dark mobile-new-whats p-2 small d-flex d-lg-none" href="https://wa.me/551140072536?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20sistema%20eGestor.%20Me%20chamo%20">
+    <img height="45" class="align-self-center" src="./assets/img/whatsapp.png">
+  </a>
+  <a target="_blank" id="new-whats" class="text-dark text-center new-whats p-3 pb-0 rounded small d-none d-lg-flex" href="https://wa.me/551140072536?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20sistema%20eGestor.%20Me%20chamo%20">
+	  <img height="25" class="me-1" src="./assets/img/whatsapp.png">
+	  <div>
+	    <p>Whatsapp
+	    <span class="ms-1 p-1 px-2 mt-2 rounded">+55 11 4007-2536</span></p>
+	  </div>
+	</a>
+</div>
+
+<!-- //WHATSAPP -->
+
+
+<!-- COOKIES -->
+
+
+
+<div id="gdpr-cookie-message" class="py-1 px-3 aviso rounded">
+  <div class="row">
+  	<div id="paragrafoInfo" class="col-12 rounded p-2 mb-3">
+  		<h2 class="fs-6 mb-2">Política de Cookies do eGestor</h2>
+  		<p class="small mb-2">O eGestor se preocupa imensamente com a experiência de nossos usuários e visitantes assim garante que sua privacidade e segurança sejam soberanamente resguardados. Pensamos nisso, fizemos toda análise de desenvolvimento para agregar o melhor que podemos oferecer em experiência e segurança.</p>
+  		<p class="small mb-3">Nosso protocolo de gerenciamento de cookies se dará da seguinte forma:</p>
+  		<h3 class="subtitle fs-6 mb-2">Os cookies internos</h3>
+  		<p class="small mb-2">Os cookies de desempenho e de finalidade foram agrupados da seguinte forma:</p>
+  		<p class="small mb-2"><strong>Cookie para controle de sessão:</strong> Identifica o usuário no servidor, mantendo apenas um código identificador, sem nenhum dado pessoal.</p>
+  		<p class="small mb-2"><strong>Cookie para controle do balanceador:</strong> Identifica qual servidor do eGestor o usuário está acessando. Este cookie está ligado ao cookie de controle de sessão e não armazena dados pessoais.
+  		<p class="small mb-2"><strong>Cookie com o nome:</strong> Utilizamos um cookie que é salvo no seu navegador ao fazer login em sua conta no eGestor. Este cookie é utilizado apenas para personalizar sua experiência no site, pois ao retornar ao site é exibida uma mensagem dando bom dia, boa tarde ou boa noite e adicionando o primeiro nome. Não associado diretamente ao titular.</p>
+  		<p class="small mb-3"><strong>Cookie de plano:</strong> Ao logar no sistema é salvo um cookie no navegador com o plano em que sua conta está inclusa. Isso serve para proporcionarmos uma experiência melhor, direcionando quem já é cliente para o login e quem ainda não tem conta para o cadastro.</p>
+  		<h3 class="subtitle fs-6 mb-2">Os cookies externos</h3>
+  		<p class="small mb-2">Os cookies de terceiros utilizados no eGestor podem armazenar dados pessoais. É de responsabilidade do usuário acompanhar possíveis atualizações nas políticas de privacidade destas ferramentas.</p>
+  		<p class="small mb-2"><strong>Pixel do Google Analytics:</strong> Utilizamos o Pixel do Google Analytics para termos controle de quantos acessos recebemos em nosso site e criar públicos de remarketing com propagandas. Este cookie é vital para seguirmos trabalhando na otimização da experiência dos usuários. Ao recusar nossa política de Cookies o usuário deixa de entrar em nossos públicos de remarketing, mas ainda é contabilizado no Analytics, e dados de acesso, como o dispositivo utilizado no acesso, também são salvos de maneira anônima.</p>
+  		<p class="small mb-2"><strong>O Pixel do RD Station:</strong> Este pixel cria um cookie para trackear as páginas visitadas pelo usuário em nosso site. Ele também coleta todos os dados preenchidos em formulários dentro de nosso site.</p>
+  		<p class="small mb-2"><strong>O Pixel do Facebook:</strong> Utilizamos o pixel do Facebook para que possamos informar novidades, promoções e divulgar conteúdos gratuitos através de propaganda paga.</p>
+  		<p class="small mb-3">Ao rejeitar este aviso o visitante rejeita todos os cookies vinculados a comunicação e marketing mantendo apenas os que nos auxiliam a monitorar o tráfego em nosso site de maneira anônima não permitindo o acesso a identificação do visitante.</p>
+	  </div>
+	  <div class="d-block d-md-flex justify-content-center">
+	    <p class="m-1 me-auto align-self-center">🍪 Utilizamos cookies para melhorar a experiência em nosso site. Saiba mais <a id="infoCookies" class="me-2 link-primary">clicando aqui.</a></p>
+	    <div class="text-end d-flex justify-content-end">
+	      <div class="aviso text-center botoesCookies">
+		      <div class="recusar me-3 d-inline recusarCookies"><a>Recusar</a></div>
+		      <button id="aceitarCookies" type="button" class="btn button-shadow btn-primary button">Aceitar</button>
+		    </div>
+	  	</div>
+	  </div>
+	</div>
+</div>
+
+<!-- //COOKIES -->
+
+
+
+
+
+  <!-- CHAMADA -->
+  
+  <div id="chamada" class="slide404 block">
+    <div class="pt-5">
+      <div class="aurora-bg justify-center">
+        <div id="bg_shape1" class="bg-shape1 bg-one opacity-45 bg-blur motion_one"></div>
+        <div id="bg_shape2" class="bg-shape2 bg-two opacity-45 bg-blur motion_two"></div>
+        <div id="bg_shape3" class="bg-shape3 bg-three opacity-45 bg-blur motion_three"></div>
+      </div>
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start align-self-center mb-md-0 mb-4">
+            <h1 class="title">⚠️ Página não encontrada</h1>
+            <p class="my-4">Parece que a página que você está procurando não existe.</p>
+            <a href="index.php" class="btn button-primary btn-primary button">Página inicial</a>
+          </div>
+          <div class="col-md-6 align-self-center text-center">
+            <span class="pag404">404</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- //CHAMADA -->
+
+
+
+	<!-- FOOTER -->
+	<footer id="rodape" class="pb-4" >
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-3 mb-3 mb-md-0 order-lg-1 order-5">
+          <img src="assets/img/logo.png" alt="eGestor" class="img-fluid mb-3">
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="tel:0800603333" class="link-dark d-block mb-2">0800 603 3336</a></li>
+            <li class="mb-2"><a href="mailto:atendimento@zipline.com.br" class="link-dark">atendimento@zipline.com.br</a></li>
+            <li class="mb-2 subtitle">Rua do Acampamento nº 380 - Centro - Santa Maria - RS - 97050-002</li>
+            <li class="mb-3 subtitle">CNPJ 04.693.497/0001-21</li>
+            <li class="mb-2 d-inline-block"><a href="https://www.youtube.com/eGestorERP" class="link-dark" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li class="mb-2 d-inline-block"><a href="https://facebook.com/EgestorERP" class="link-dark" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+            <li class="mb-2 d-inline-block"><a href="https://www.instagram.com/egestorerp" class="link-dark" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li class="mb-2 d-inline-block"><a href="https://www.linkedin.com/company/egestor" class="link-dark" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="mb-2 d-inline-block"><a href="https://open.spotify.com/show/0G3R7gTIgUODsDji6K3kpW" class="link-dark" target="_blank"><i class="fab fa-spotify"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1 mb-3 mb-md-0 order-lg-2 order-1">
+          <p class="fs-5 subtitle">Navegação</p>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="segmentos.php" class="link-dark">Atuação</a></li>
+            <li class="mb-2"><a href="cadastro.php" class="link-dark">Cadastro</a></li>
+            <li class="mb-2"><a href="contato.php" class="link-dark">Contato</a></li>
+            <li class="mb-2"><a href="funcionalidades.php" class="link-dark">Funcionalidades</a></li>
+            <li class="mb-2"><a href="acesse.php" class="link-dark">Login</a></li>
+            <li class="mb-2"><a href="planos.php" class="link-dark">Planos</a></li>
+            <li class="mb-2"><a href="sobre.php" class="link-dark">Sobre</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3 mb-md-0 order-lg-1-3 order-2" id="afl-rodape" style="opacity:0;">
+          <p class="fs-5 subtitle">Parceiros</p>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="http://parceiros.zipline.com.br/login.php" class="link-dark">Login de parceiros</a></li>
+            <li class="mb-2"><a href="representantes.php" class="link-dark">Seja um representante</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3 mb-md-0 order-lg-4 order-3">
+          <p class="fs-5 subtitle">Links úteis</p>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="https://egestor.docs.apiary.io/" target="_blank" rel="nofollow" class="link-dark">API</a></li>
+            <li class="mb-2"><a href="https://blog.egestor.com.br" target="_blank" class="link-dark">Blog</a></li>
+            <li class="mb-2"><a href="brand.php" class="link-dark">Brand</a></li>
+            <li class="mb-2"><a href="https://blog.egestor.com.br/?s=planilha" target="_blank" class="link-dark">Planilhas</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3 order-lg-5 order-4">
+          <ul class="list-unstyled small">
+            <li class=""><a href="https://apps.apple.com/br/app/egestor/id6736366754" target="_blank"><img src="assets/img/baixar-app-store.png" class="img-fluid link-img" alt="app do eGestor iOS" title="baixar o app do eGestor"></a></li>
+            <li class=""><a href="https://play.google.com/store/apps/details?id=com.br.egestor&hl=pt_BR&gl=US" target="_blank"><img src="assets/img/google-play-badge.png" class="img-fluid link-img" alt="app do eGestor" title="baixar o app do eGestor"></a></li>
+            <li class="p-2"><img src="https://storage.googleapis.com/partnerhub_partner_badges_prod/D_648b3b7c7c9f540019d4063a.png" class="img-fluid" alt="eGestor é parceiro Stone" title="eGestor é parceiro Stone"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row bg-footer small">
+        <div class="col-lg-5 text-center text-md-start">
+          <p class="subtitle">© 2025 eGestor - Sistema Online de Gestão Empresarial</p>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+          <p><a href="termos-de-uso.php" target="_blank" class="link-dark">Termos de uso</a> | <a href="politica_de_privacidade.php" target="_blank" class="link-dark">Política de privacidade</a></p>
+        </div>
+        <div class="col-lg-3 text-center text-lg-end">
+          <p class="subtitle">Desenvolvido por: <img src="assets/img/zipline-logo.svg" class="img-fluid ms-2 zipline-logo" alt="Zipline Tecnologia Ltda."></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+	<!-- FOOTER -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+
+	
+</html>
