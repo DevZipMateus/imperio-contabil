@@ -30,7 +30,7 @@ const Header = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/5567987654321?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20implementos%20agrícolas.', '_blank');
+    window.open('https://wa.me/557388607687?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20contábeis%20da%20Império.', '_blank');
   };
 
   return (
@@ -44,9 +44,19 @@ const Header = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between">
           <a href="#" className="relative z-20">
-            <h1 className="text-xl md:text-2xl font-display font-bold text-foreground">
-              <span className="text-primary">AgroTech</span> Implementos
-            </h1>
+            <div className="flex items-center gap-3">
+              <img 
+                src="/lovable-uploads/dacc99de-aa0c-4c37-ad6f-7a225d124757.png" 
+                alt="Império Contabilidade" 
+                className="h-10 w-auto"
+              />
+              <div className="hidden md:block">
+                <h1 className="text-lg font-display font-bold text-foreground">
+                  <span className="text-primary">IMPÉRIO</span>
+                </h1>
+                <p className="text-xs text-muted-foreground font-medium">Contabilidade & Consultoria</p>
+              </div>
+            </div>
           </a>
 
           {/* Desktop Menu */}
@@ -102,9 +112,11 @@ interface NavLinksProps {
 const NavLinks = ({ mobile, onClick }: NavLinksProps) => {
   const links = [
     { name: 'Início', href: '#hero' },
-    { name: 'Produtos', href: '#products' },
-    { name: 'Marcas', href: '#brands' },
-    { name: 'Sobre Nós', href: '#about' },
+    { name: 'Sobre', href: '#about' },
+    { name: 'Serviços', href: '#services' },
+    { name: 'Planos', href: '#plans' },
+    { name: 'Depoimentos', href: '#testimonials' },
+    { name: 'Localização', href: '#location' },
     { name: 'Contato', href: '#contact' },
   ];
 

@@ -2,10 +2,9 @@
 import { useEffect } from 'react';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
-import CategoriesSection from '@/components/CategoriesSection';
-import FeaturedProducts from '@/components/FeaturedProducts';
-import BrandsSection from '@/components/BrandsSection';
 import AboutSection from '@/components/AboutSection';
+import ServicesSection from '@/components/ServicesSection';
+import PlansSection from '@/components/PlansSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';

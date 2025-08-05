@@ -22,7 +22,7 @@ const WhatsAppButton = () => {
   }, []);
 
   const handleOpenWhatsApp = () => {
-    window.open('https://wa.me/5511987654321?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20contábeis.', '_blank');
+    window.open('https://wa.me/557388607687?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20contábeis%20da%20Império.', '_blank');
     setIsOpen(false);
   };
 
