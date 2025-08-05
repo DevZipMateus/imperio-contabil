@@ -189,44 +189,17 @@ html {
   box-shadow: 0 25px 50px rgba(212, 175, 55, 0.3);
 }
 
-/* Product Card Hover Effects */
-.product-card {
-  transition: all 0.3s ease;
-  overflow: hidden;
-}
-
-.product-card:hover {
-  box-shadow: 0 20px 40px rgba(34, 197, 94, 0.15);
-}
-
-.product-card:hover .product-image {
-  transform: scale(1.1);
-}
-
-.product-image {
-  transition: transform 0.5s ease;
-}
-
-/* Agricultural Color Gradients */
-.agro-gradient {
-  background: linear-gradient(135deg, #22c55e 0%, #16a34a 50%, #15803d 100%);
-}
-
-.earth-gradient {
-  background: linear-gradient(135deg, #a3a3a3 0%, #737373 50%, #525252 100%);
-}
-
 /* Enhanced Button Styles */
 .cta-button {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #22c55e, #16a34a);
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
   transition: all 0.3s ease;
 }
 
 .cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(34, 197, 94, 0.3);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4);
 }
 
 .cta-button:before {
@@ -302,12 +275,8 @@ html {
 }
 
 /* Enhanced Shadow Utilities */
-.shadow-agro {
+.shadow-elegant {
   box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
-}
-
-.shadow-earth {
-  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
 }
 
 .shadow-nav {
