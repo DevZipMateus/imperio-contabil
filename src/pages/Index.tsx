@@ -9,6 +9,9 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import CategoriesSection from '@/components/CategoriesSection';
+import FeaturedProducts from '@/components/FeaturedProducts';
+import BrandsSection from '@/components/BrandsSection';
 
 const Index = () => {
   useEffect(() => {
