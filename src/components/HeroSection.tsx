@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, ArrowRight, Calculator, TrendingUp, Shield } from 'lucide-react';
@@ -26,14 +27,16 @@ const HeroSection = () => {
 
   return (
     <section id="hero" ref={sectionRef} className="relative min-h-screen flex items-center justify-center pt-20">
-      {/* Background with overlay */}
+      {/* Background with enhanced overlay */}
       <div className="absolute inset-0 z-0">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat hero-overlay"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80')`
           }}
         ></div>
+        {/* Enhanced dark overlay for better text contrast */}
+        <div className="absolute inset-0 bg-black/70"></div>
       </div>
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
