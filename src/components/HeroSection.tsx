@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, ArrowRight, Calculator, TrendingUp, Shield } from 'lucide-react';
@@ -99,7 +100,7 @@ const HeroSection = () => {
                 <img 
                   src="/lovable-uploads/7dafdbb3-ccc1-476d-a3d7-a1caf65e5dc9.png"
                   alt="Império Contabilidade" 
-                  className="relative z-10 w-80 h-80 xl:w-96 xl:h-96 2xl:w-[28rem] 2xl:h-[28rem] object-contain drop-shadow-2xl"
+                  className="relative z-10 w-96 h-96 xl:w-[30rem] xl:h-[30rem] 2xl:w-[36rem] 2xl:h-[36rem] object-contain drop-shadow-2xl"
                 />
               </div>
             </div>
