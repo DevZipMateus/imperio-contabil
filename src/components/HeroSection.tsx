@@ -99,7 +99,7 @@ const HeroSection = () => {
                 <img 
                   src="/lovable-uploads/7dafdbb3-ccc1-476d-a3d7-a1caf65e5dc9.png"
                   alt="Império Contabilidade" 
-                  className="relative z-10 w-64 h-64 xl:w-80 xl:h-80 object-contain drop-shadow-2xl"
+                  className="relative z-10 w-80 h-80 xl:w-96 xl:h-96 2xl:w-[28rem] 2xl:h-[28rem] object-contain drop-shadow-2xl"
                 />
               </div>
             </div>
