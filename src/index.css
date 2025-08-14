@@ -15,30 +15,30 @@
     --popover-foreground: 0 0% 95%;
     
     --secondary: 0 0% 15%;
-    --secondary-foreground: 45 85% 58%;
+    --secondary-foreground: 43 74% 66%;
     --muted: 0 0% 12%;
     --muted-foreground: 0 0% 70%;
     
-    --primary: 45 85% 58%;
+    --primary: 43 74% 66%;
     --primary-foreground: 0 0% 0%;
-    --accent: 30 60% 25%;
-    --accent-foreground: 45 85% 58%;
+    --accent: 35 45% 35%;
+    --accent-foreground: 43 74% 66%;
     
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 20%;
     --input: 0 0% 15%;
-    --ring: 45 85% 58%;
+    --ring: 43 74% 66%;
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 5%;
     --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 45 85% 58%;
+    --sidebar-primary: 43 74% 66%;
     --sidebar-primary-foreground: 0 0% 0%;
     --sidebar-accent: 0 0% 12%;
-    --sidebar-accent-foreground: 45 85% 58%;
+    --sidebar-accent-foreground: 43 74% 66%;
     --sidebar-border: 0 0% 20%;
-    --sidebar-ring: 45 85% 58%;
+    --sidebar-ring: 43 74% 66%;
   }
 }
 
@@ -80,7 +80,7 @@
 .glass-effect {
   backdrop-filter: blur(10px);
   background: rgba(0, 0, 0, 0.8);
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid rgba(218, 165, 32, 0.2);
 }
 
 /* Smooth scroll behavior */
@@ -175,7 +175,7 @@ html {
 }
 
 .elegant-shadow {
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 4px 16px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 4px 16px rgba(218, 165, 32, 0.3);
 }
 
 /* Enhanced Card Animations */
@@ -186,7 +186,7 @@ html {
 
 .service-card:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 25px 50px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 25px 50px rgba(218, 165, 32, 0.3);
 }
 
 /* Enhanced Button Styles */
@@ -199,7 +199,7 @@ html {
 
 .cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 10px 20px rgba(218, 165, 32, 0.4);
 }
 
 .cta-button:before {
@@ -308,7 +308,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(212, 175, 55);
+  background: rgb(218, 165, 32);
   border-radius: 4px;
 }
 
@@ -318,7 +318,7 @@ html {
 
 /* Enhanced Shadow Utilities */
 .shadow-elegant {
-  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 10px 30px rgba(218, 165, 32, 0.2);
 }
 
 .shadow-nav {
