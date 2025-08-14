@@ -15,30 +15,40 @@
     --popover-foreground: 0 0% 95%;
     
     --secondary: 0 0% 15%;
-    --secondary-foreground: 43 74% 66%;
+    --secondary-foreground: 43 84% 70%;
     --muted: 0 0% 12%;
     --muted-foreground: 0 0% 70%;
     
-    --primary: 43 74% 66%;
+    /* Cores douradas mais ricas baseadas na logo */
+    --primary: 45 100% 50%;
+    --primary-rich: 43 85% 55%;
+    --primary-light: 48 100% 70%;
+    --primary-dark: 38 85% 40%;
     --primary-foreground: 0 0% 0%;
-    --accent: 35 45% 35%;
-    --accent-foreground: 43 74% 66%;
+    --accent: 30 50% 25%;
+    --accent-foreground: 45 100% 50%;
     
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 20%;
     --input: 0 0% 15%;
-    --ring: 43 74% 66%;
+    --ring: 45 100% 50%;
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 5%;
     --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 43 74% 66%;
+    --sidebar-primary: 45 100% 50%;
     --sidebar-primary-foreground: 0 0% 0%;
     --sidebar-accent: 0 0% 12%;
-    --sidebar-accent-foreground: 43 74% 66%;
+    --sidebar-accent-foreground: 45 100% 50%;
     --sidebar-border: 0 0% 20%;
-    --sidebar-ring: 43 74% 66%;
+    --sidebar-ring: 45 100% 50%;
+
+    /* Variáveis para gradientes dourados */
+    --gold-gradient-start: 255, 215, 0;
+    --gold-gradient-mid: 255, 193, 7;
+    --gold-gradient-end: 218, 165, 32;
+    --gold-shadow: 255, 215, 0;
   }
 }
 
@@ -76,11 +86,12 @@
   transform: translateY(0);
 }
 
-/* Glass effect */
+/* Enhanced Glass effect with golden accents */
 .glass-effect {
   backdrop-filter: blur(10px);
   background: rgba(0, 0, 0, 0.8);
-  border: 1px solid rgba(218, 165, 32, 0.2);
+  border: 1px solid rgba(var(--gold-gradient-start), 0.3);
+  box-shadow: 0 4px 20px rgba(var(--gold-gradient-start), 0.1);
 }
 
 /* Smooth scroll behavior */
@@ -88,7 +99,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* WhatsApp Button Animation */
+/* WhatsApp Button Animation with golden accents */
 .whatsapp-btn {
   animation: pulse 2s infinite;
   transition: all 0.3s ease;
@@ -136,6 +147,27 @@ html {
   }
 }
 
+/* Golden pulse animation */
+@keyframes golden-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(var(--gold-gradient-start), 0.6);
+    transform: scale(1);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(var(--gold-gradient-start), 0);
+    transform: scale(1.02);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--gold-gradient-start), 0);
+    transform: scale(1);
+  }
+}
+
+@keyframes golden-shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
 @keyframes jump {
   0%, 100% {
     transform: translateY(0);
@@ -160,7 +192,7 @@ html {
   }
 }
 
-/* Contabilidade Theme Enhancements */
+/* Enhanced Contabilidade Theme with Golden Effects */
 .hero-overlay {
   background: linear-gradient(
     135deg,
@@ -170,36 +202,108 @@ html {
   );
 }
 
+/* Golden gradient effects */
 .gold-gradient {
-  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+  background: linear-gradient(
+    135deg,
+    rgb(var(--gold-gradient-start)) 0%,
+    rgb(var(--gold-gradient-mid)) 50%,
+    rgb(var(--gold-gradient-end)) 100%
+  );
+}
+
+.gold-gradient-text {
+  background: linear-gradient(
+    135deg,
+    rgb(var(--gold-gradient-start)) 0%,
+    rgb(var(--gold-gradient-mid)) 50%,
+    rgb(var(--gold-gradient-end)) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: golden-shimmer 3s ease-in-out infinite alternate;
 }
 
 .elegant-shadow {
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 4px 16px rgba(218, 165, 32, 0.3);
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.5), 
+    0 4px 16px rgba(var(--gold-gradient-start), 0.4),
+    inset 0 1px 0 rgba(var(--gold-gradient-start), 0.2);
 }
 
-/* Enhanced Card Animations */
+.golden-border {
+  border: 2px solid;
+  border-image: linear-gradient(
+    135deg,
+    rgb(var(--gold-gradient-start)) 0%,
+    rgb(var(--gold-gradient-mid)) 50%,
+    rgb(var(--gold-gradient-end)) 100%
+  ) 1;
+}
+
+/* Enhanced Card Animations with Golden Effects */
 .service-card {
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform-origin: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(var(--gold-gradient-start), 0.1),
+    transparent
+  );
+  transition: left 0.8s ease;
+}
+
+.service-card:hover::before {
+  left: 100%;
 }
 
 .service-card:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 25px 50px rgba(218, 165, 32, 0.3);
+  box-shadow: 
+    0 25px 50px rgba(var(--gold-gradient-start), 0.4),
+    0 10px 30px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(var(--gold-gradient-start), 0.2);
 }
 
-/* Enhanced Button Styles */
+/* Enhanced Button Styles with Metallic Gold Effect */
 .cta-button {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+  background: linear-gradient(
+    135deg,
+    rgb(var(--gold-gradient-start)) 0%,
+    rgb(var(--gold-gradient-mid)) 50%,
+    rgb(var(--gold-gradient-end)) 100%
+  );
+  background-size: 200% 200%;
   transition: all 0.3s ease;
+  box-shadow: 
+    0 4px 15px rgba(var(--gold-gradient-start), 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(218, 165, 32, 0.4);
+  background-position: 100% 0;
+  box-shadow: 
+    0 10px 25px rgba(var(--gold-gradient-start), 0.5),
+    0 5px 15px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  animation: golden-pulse 2s infinite;
 }
 
 .cta-button:before {
@@ -209,12 +313,23 @@ html {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.6s;
 }
 
 .cta-button:hover:before {
   left: 100%;
+}
+
+/* Golden accent elements */
+.golden-accent {
+  color: rgb(var(--gold-gradient-start));
+  text-shadow: 0 0 10px rgba(var(--gold-gradient-start), 0.5);
+}
+
+.golden-icon {
+  color: rgb(var(--gold-gradient-start));
+  filter: drop-shadow(0 0 5px rgba(var(--gold-gradient-start), 0.5));
 }
 
 /* Mobile optimizations */
@@ -298,7 +413,7 @@ html {
   outline-offset: 2px;
 }
 
-/* Custom scrollbar for webkit browsers */
+/* Custom scrollbar with golden accents */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -308,25 +423,46 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(218, 165, 32);
+  background: linear-gradient(
+    180deg,
+    rgb(var(--gold-gradient-start)),
+    rgb(var(--gold-gradient-end))
+  );
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(255, 215, 0);
+  background: linear-gradient(
+    180deg,
+    rgb(var(--gold-gradient-mid)),
+    rgb(var(--gold-gradient-start))
+  );
 }
 
-/* Enhanced Shadow Utilities */
+/* Enhanced Shadow Utilities with Golden Accents */
 .shadow-elegant {
-  box-shadow: 0 10px 30px rgba(218, 165, 32, 0.2);
+  box-shadow: 
+    0 10px 30px rgba(var(--gold-gradient-start), 0.3),
+    0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .shadow-nav {
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 
+    0 2px 20px rgba(0, 0, 0, 0.5),
+    0 1px 5px rgba(var(--gold-gradient-start), 0.2);
 }
 
 .shadow-card {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.3),
+    0 2px 8px rgba(var(--gold-gradient-start), 0.1);
+}
+
+.shadow-golden {
+  box-shadow: 
+    0 8px 25px rgba(var(--gold-gradient-start), 0.4),
+    0 4px 12px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(var(--gold-gradient-start), 0.1);
 }
 
 /* Responsive utilities */
@@ -360,6 +496,12 @@ html {
   .hover-scale:hover {
     transform: scale(1.05);
   }
+
+  .hover-golden:hover {
+    color: rgb(var(--gold-gradient-start));
+    text-shadow: 0 0 10px rgba(var(--gold-gradient-start), 0.5);
+    transition: all 0.3s ease;
+  }
 }
 
 /* Print styles */
@@ -370,4 +512,47 @@ html {
     animation: none !important;
     transform: none !important;
   }
+}
+
+/* Additional golden utility classes */
+.bg-golden-gradient {
+  background: linear-gradient(
+    135deg,
+    rgb(var(--gold-gradient-start)) 0%,
+    rgb(var(--gold-gradient-mid)) 50%,
+    rgb(var(--gold-gradient-end)) 100%
+  );
+}
+
+.border-golden {
+  border-color: rgb(var(--gold-gradient-start));
+}
+
+.text-golden {
+  color: rgb(var(--gold-gradient-start));
+}
+
+.golden-glow {
+  box-shadow: 0 0 20px rgba(var(--gold-gradient-start), 0.6);
+}
+
+.golden-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.golden-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(var(--gold-gradient-start), 0.3),
+    transparent
+  );
+  animation: golden-shimmer 2s infinite;
 }
