@@ -87,10 +87,10 @@ const ServicesSection = () => {
           <span className="inline-block px-6 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4 animate-on-scroll border border-primary/20">
             Nossos Serviços
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll text-gray-900">
             Soluções <span className="text-primary">Contábeis</span> Completas
           </h2>
-          <p className="text-muted-foreground max-w-3xl mx-auto text-lg animate-on-scroll leading-relaxed">
+          <p className="text-gray-700 max-w-3xl mx-auto text-lg animate-on-scroll leading-relaxed">
             Cuidamos de todas as obrigações contábeis, desde cálculo de impostos, declarações e o que for 
             preciso junto à Receita Federal, estadual e prefeitura.
           </p>
@@ -111,10 +111,10 @@ const ServicesSection = () => {
         <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 md:p-12 animate-on-scroll">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">
                 Por que escolher a <span className="text-primary">Império</span>?
               </h3>
-              <p className="text-muted-foreground mb-8 text-lg leading-relaxed">
+              <p className="text-gray-700 mb-8 text-lg leading-relaxed">
                 Nossa experiência e dedicação fazem toda a diferença no crescimento do seu negócio. 
                 Trabalhamos como parceiros estratégicos para seu sucesso.
               </p>
@@ -122,7 +122,7 @@ const ServicesSection = () => {
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-foreground font-medium">{feature}</span>
+                    <span className="text-gray-900 font-medium">{feature}</span>
                   </div>
                 ))}
               </div>
@@ -166,8 +166,8 @@ const ServiceCard = ({
   <Card className={`animate-on-scroll service-card border border-primary/10 shadow-md hover:shadow-lg transition-all duration-300 h-full [animation-delay:${index * 100}ms]`}>
     <CardContent className="p-8 flex flex-col items-center text-center h-full">
       <div className="mb-6 p-4 bg-primary/10 rounded-full">{icon}</div>
-      <h3 className="text-xl font-bold mb-4 text-foreground">{title}</h3>
-      <p className="text-muted-foreground leading-relaxed flex-grow">{description}</p>
+      <h3 className="text-xl font-bold mb-4 text-gray-900">{title}</h3>
+      <p className="text-gray-700 leading-relaxed flex-grow">{description}</p>
     </CardContent>
   </Card>
 );
