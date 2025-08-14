@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ChevronUp } from 'lucide-react';
+
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -7,7 +8,9 @@ const Footer = () => {
       behavior: 'smooth'
     });
   };
-  return <footer className="text-white py-16 bg-zinc-950">
+
+  return (
+    <footer className="text-white py-16 bg-zinc-950">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-4">
@@ -37,7 +40,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contato</h4>
             <ul className="space-y-3 text-white/80">
-              <li>(11) 99999-9999</li>
+              <li>(73) 8860-7687</li>
               <li>contato@imperiocontabilidade.com.br</li>
               <li>Rua Exemplo, 123 - São Paulo - SP</li>
               <li>Segunda a Sexta, 8h às 18h</li>
@@ -59,23 +62,30 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
+
 interface FooterNavItemProps {
   href: string;
   children: React.ReactNode;
 }
-const FooterNavItem = ({
-  href,
-  children
-}: FooterNavItemProps) => <li>
+
+const FooterNavItem = ({ href, children }: FooterNavItemProps) => (
+  <li>
     <a href={href} className="text-white/70 hover:text-primary transition-colors duration-200">
       {children}
     </a>
-  </li>;
+  </li>
+);
+
 interface FooterSocialLinkProps {
   href: string;
   'aria-label': string;
 }
-const FooterSocialLink = (props: FooterSocialLinkProps) => <a {...props} className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/20 hover:bg-primary/80 transition-colors duration-200" />;
+
+const FooterSocialLink = (props: FooterSocialLinkProps) => (
+  <a {...props} className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/20 hover:bg-primary/80 transition-colors duration-200" />
+);
+
 export default Footer;
