@@ -100,7 +100,7 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-primary/30 rounded-full blur-3xl scale-150 golden-glow"></div>
                 <div className="absolute inset-0 bg-golden-radial rounded-full scale-125 opacity-50"></div>
                 <img 
-                  src="/lovable-uploads/dacc99de-aa0c-4c37-ad6f-7a225d124757.png"
+                  src="/lovable-uploads/7dafdbb3-ccc1-476d-a3d7-a1caf65e5dc9.png"
                   alt="Império Contabilidade" 
                   className="relative z-10 w-64 h-64 xl:w-80 xl:h-80 object-contain drop-shadow-2xl animate-golden-pulse"
                 />

@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
@@ -45,7 +46,7 @@ const Header = () => {
           <a href="#" className="relative z-20">
             <div className="flex items-center gap-2 md:gap-3">
               <img 
-                src="/lovable-uploads/dacc99de-aa0c-4c37-ad6f-7a225d124757.png" 
+                src="/lovable-uploads/7dafdbb3-ccc1-476d-a3d7-a1caf65e5dc9.png" 
                 alt="Império Contabilidade" 
                 className="h-8 md:h-10 w-auto"
               />
