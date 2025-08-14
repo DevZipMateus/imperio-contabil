@@ -26,7 +26,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" ref={sectionRef} className="relative min-h-screen flex items-center justify-center pt-20">
+    <section id="hero" ref={sectionRef} className="relative min-h-screen flex items-center justify-center pt-16 md:pt-20">
       {/* Background with enhanced overlay */}
       <div className="absolute inset-0 z-0">
         <div 
@@ -39,55 +39,55 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-black/70"></div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-8 relative z-10">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-left">
-              <span className="inline-block px-6 py-3 bg-primary/20 backdrop-blur-md rounded-full text-primary font-semibold mb-6 animate-slide-up [animation-delay:300ms] border border-primary/30">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <span className="inline-block px-4 md:px-6 py-2 md:py-3 bg-primary/20 backdrop-blur-md rounded-full text-primary font-semibold mb-4 md:mb-6 animate-slide-up [animation-delay:300ms] border border-primary/30 text-sm md:text-base">
                 A força que seu negócio precisa
               </span>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-slide-up [animation-delay:500ms]">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight animate-slide-up [animation-delay:500ms]">
                 <span className="text-primary">IMPÉRIO</span><br />
                 Contabilidade &<br />
                 <span className="text-primary">Consultoria</span>
               </h1>
               
-              <p className="text-lg md:text-xl text-white/90 mb-8 max-w-xl animate-slide-up [animation-delay:700ms]">
+              <p className="text-base md:text-lg lg:text-xl text-white/90 mb-6 md:mb-8 max-w-2xl mx-auto lg:mx-0 animate-slide-up [animation-delay:700ms] leading-relaxed">
                 Oferecemos serviços contábeis personalizados com excelência, transparência e foco em resultados. 
                 Sua empresa em boas mãos, crescendo com segurança e organização.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 animate-slide-up [animation-delay:900ms] mb-8">
+              <div className="flex flex-col sm:flex-row gap-4 animate-slide-up [animation-delay:900ms] mb-6 md:mb-8 justify-center lg:justify-start">
                 <Button 
                   size="lg" 
                   onClick={handleWhatsAppClick}
-                  className="bg-primary hover:bg-primary/90 text-accent-foreground rounded-md shadow-lg group font-semibold"
+                  className="bg-primary hover:bg-primary/90 text-accent-foreground rounded-md shadow-lg group font-semibold text-sm md:text-base px-6 md:px-8 py-3 md:py-4"
                 >
                   Solicitar Orçamento
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm"
+                  className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm text-sm md:text-base px-6 md:px-8 py-3 md:py-4"
                   onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Nossos Serviços
                 </Button>
               </div>
 
-              <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-8 space-y-4 sm:space-y-0 text-white/80 text-sm animate-slide-up [animation-delay:1100ms]">
-                <div className="flex items-center">
-                  <Calculator className="w-5 h-5 text-primary mr-2" />
+              <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-6 lg:space-x-8 space-y-3 sm:space-y-0 text-white/80 text-xs md:text-sm animate-slide-up [animation-delay:1100ms] justify-center lg:justify-start">
+                <div className="flex items-center justify-center lg:justify-start">
+                  <Calculator className="w-4 h-4 md:w-5 md:h-5 text-primary mr-2" />
                   Contabilidade completa
                 </div>
-                <div className="flex items-center">
-                  <TrendingUp className="w-5 h-5 text-primary mr-2" />
+                <div className="flex items-center justify-center lg:justify-start">
+                  <TrendingUp className="w-4 h-4 md:w-5 md:h-5 text-primary mr-2" />
                   Consultoria estratégica
                 </div>
-                <div className="flex items-center">
-                  <Shield className="w-5 h-5 text-primary mr-2" />
+                <div className="flex items-center justify-center lg:justify-start">
+                  <Shield className="w-4 h-4 md:w-5 md:h-5 text-primary mr-2" />
                   Conformidade garantida
                 </div>
               </div>
@@ -99,7 +99,7 @@ const HeroSection = () => {
                 <img 
                   src="/lovable-uploads/dacc99de-aa0c-4c37-ad6f-7a225d124757.png"
                   alt="Império Contabilidade" 
-                  className="relative z-10 w-80 h-80 object-contain drop-shadow-2xl"
+                  className="relative z-10 w-64 h-64 xl:w-80 xl:h-80 object-contain drop-shadow-2xl"
                 />
               </div>
             </div>
@@ -109,10 +109,10 @@ const HeroSection = () => {
 
       {/* Scroll down indicator */}
       <div 
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white cursor-pointer animate-bounce" 
+        className="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 text-white cursor-pointer animate-bounce" 
         onClick={scrollToNextSection}
       >
-        <ChevronDown size={32} />
+        <ChevronDown size={28} className="md:w-8 md:h-8" />
       </div>
     </section>
   );

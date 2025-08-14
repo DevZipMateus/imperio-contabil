@@ -37,21 +37,21 @@ const Header = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'py-3 bg-background/95 backdrop-blur-md shadow-nav' 
-          : 'py-4 bg-transparent'
+          ? 'py-2 md:py-3 bg-background/95 backdrop-blur-md shadow-nav' 
+          : 'py-3 md:py-4 bg-transparent'
       }`}
     >
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <a href="#" className="relative z-20">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 md:gap-3">
               <img 
                 src="/lovable-uploads/dacc99de-aa0c-4c37-ad6f-7a225d124757.png" 
                 alt="Império Contabilidade" 
-                className="h-10 w-auto"
+                className="h-8 md:h-10 w-auto"
               />
-              <div className="hidden md:block">
-                <h1 className="text-lg font-display font-bold text-foreground">
+              <div className="hidden sm:block">
+                <h1 className="text-base md:text-lg font-display font-bold text-foreground">
                   <span className="text-primary">IMPÉRIO</span>
                 </h1>
                 <p className="text-xs text-foreground/80 font-medium">Contabilidade & Consultoria</p>
@@ -60,26 +60,26 @@ const Header = () => {
           </a>
 
           {/* Desktop Menu */}
-          <nav className="hidden lg:flex items-center space-x-1">
+          <nav className="hidden xl:flex items-center space-x-1">
             <NavLinks />
           </nav>
 
           {/* Desktop Actions */}
-          <div className="hidden md:flex items-center">
+          <div className="hidden lg:flex items-center">
             <Button 
               onClick={handleWhatsAppClick}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground text-sm md:text-base px-4 md:px-6"
             >
               Solicitar Orçamento
             </Button>
           </div>
 
           {/* Mobile Menu */}
-          <div className="md:hidden">
+          <div className="xl:hidden">
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="h-10 w-10 text-foreground">
-                  <Menu size={24} />
+                <Button variant="ghost" size="icon" className="h-8 w-8 md:h-10 md:w-10 text-foreground">
+                  <Menu size={isMobile ? 20 : 24} />
                   <span className="sr-only">Abrir menu</span>
                 </Button>
               </SheetTrigger>
@@ -126,8 +126,8 @@ const NavLinks = ({ mobile, onClick }: NavLinksProps) => {
           href={link.href}
           className={`font-medium transition-all duration-300 px-3 py-2 rounded-md
             ${mobile 
-              ? 'text-xl text-foreground hover:text-primary mb-2 w-full text-center py-3' 
-              : 'text-foreground/80 hover:text-primary hover:bg-secondary/50'
+              ? 'text-lg md:text-xl text-foreground hover:text-primary mb-2 w-full text-center py-3' 
+              : 'text-foreground/80 hover:text-primary hover:bg-secondary/50 text-sm lg:text-base'
             }`}
           onClick={onClick}
         >
