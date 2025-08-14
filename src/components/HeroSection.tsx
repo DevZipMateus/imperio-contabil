@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, ArrowRight, Calculator, TrendingUp, Shield } from 'lucide-react';
@@ -97,12 +96,10 @@ const HeroSection = () => {
 
             <div className="hidden lg:flex justify-center items-center animate-slide-up [animation-delay:800ms]">
               <div className="relative">
-                <div className="absolute inset-0 bg-primary/30 rounded-full blur-3xl scale-150 golden-glow"></div>
-                <div className="absolute inset-0 bg-golden-radial rounded-full scale-125 opacity-50"></div>
                 <img 
                   src="/lovable-uploads/7dafdbb3-ccc1-476d-a3d7-a1caf65e5dc9.png"
                   alt="Império Contabilidade" 
-                  className="relative z-10 w-64 h-64 xl:w-80 xl:h-80 object-contain drop-shadow-2xl animate-golden-pulse"
+                  className="relative z-10 w-64 h-64 xl:w-80 xl:h-80 object-contain drop-shadow-2xl"
                 />
               </div>
             </div>
