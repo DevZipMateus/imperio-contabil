@@ -89,16 +89,16 @@ const PlansSection = () => {
           <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4 animate-on-scroll">
             Nossos Planos
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-on-scroll">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-on-scroll text-gray-900">
             Escolha o Plano Ideal para o Seu Negócio
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto mb-8 animate-on-scroll">
+          <p className="text-gray-700 max-w-2xl mx-auto mb-8 animate-on-scroll">
             Soluções completas e personalizadas para atender às necessidades específicas da sua empresa,
             independente do tamanho ou segmento.
           </p>
 
           <div className="flex items-center justify-center space-x-4 animate-on-scroll">
-            <span className={`text-sm font-medium ${!yearlySub ? 'text-foreground' : 'text-muted-foreground'}`}>Mensal</span>
+            <span className={`text-sm font-medium ${!yearlySub ? 'text-gray-900' : 'text-gray-700'}`}>Mensal</span>
             <button 
               className="relative w-14 h-7 rounded-full bg-primary/20 p-1 transition-colors" 
               onClick={() => setYearlySub(!yearlySub)}
@@ -108,7 +108,7 @@ const PlansSection = () => {
               ></span>
             </button>
             <div className="flex items-center">
-              <span className={`text-sm font-medium ${yearlySub ? 'text-foreground' : 'text-muted-foreground'}`}>Anual</span>
+              <span className={`text-sm font-medium ${yearlySub ? 'text-gray-900' : 'text-gray-700'}`}>Anual</span>
               <span className="ml-2 bg-green-100 text-green-800 text-xs px-2 py-0.5 rounded-full">Economize 10%</span>
             </div>
           </div>
@@ -166,15 +166,15 @@ const PlanCard = ({
     
     <CardHeader className="pt-8 pb-4">
       <div className="text-center">
-        <CardTitle className={`text-2xl font-bold ${popular ? 'text-primary' : ''}`}>{name}</CardTitle>
-        <p className="text-muted-foreground mt-1">{description}</p>
+        <CardTitle className={`text-2xl font-bold ${popular ? 'text-primary' : 'text-gray-900'}`}>{name}</CardTitle>
+        <p className="text-gray-700 mt-1">{description}</p>
       </div>
     </CardHeader>
     
     <CardContent className="text-center">
       <div className="mb-6">
-        <span className="text-4xl font-bold">R${price}</span>
-        <span className="text-muted-foreground">/mês</span>
+        <span className="text-4xl font-bold text-gray-900">R${price}</span>
+        <span className="text-gray-700">/mês</span>
       </div>
       
       <ul className="space-y-3 text-left mb-8">
@@ -183,9 +183,9 @@ const PlanCard = ({
             {feature.included ? (
               <Check className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
             ) : (
-              <X className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
+              <X className="h-5 w-5 text-gray-700 flex-shrink-0 mt-0.5" />
             )}
-            <span className={feature.included ? '' : 'text-muted-foreground'}>{feature.text}</span>
+            <span className={feature.included ? 'text-gray-900' : 'text-gray-700'}>{feature.text}</span>
           </li>
         ))}
       </ul>

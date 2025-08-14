@@ -65,10 +65,10 @@ const AboutSection = () => {
           <span className="inline-block px-6 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-4 animate-on-scroll border border-primary/20">
             Sobre a Império
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll text-gray-900">
             Construindo <span className="text-primary">Legados</span> e Impulsionando <span className="text-primary">Sonhos</span>
           </h2>
-          <p className="text-muted-foreground max-w-3xl mx-auto text-lg animate-on-scroll leading-relaxed">
+          <p className="text-gray-700 max-w-3xl mx-auto text-lg animate-on-scroll leading-relaxed">
             A Império Contabilidade e Consultoria nasceu com o propósito de oferecer mais do que serviços contábeis: 
             nasceu para fortalecer negócios, construir legados e impulsionar sonhos.
           </p>
@@ -77,18 +77,18 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
           <div className="space-y-6 animate-on-scroll">
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-foreground">
+              <h3 className="text-2xl font-bold text-gray-900">
                 Nossa História e Propósito
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 Fundada por profissionais experientes e apaixonados pelo que fazem, a empresa foi criada com a visão de 
                 transformar a relação entre empresários e a contabilidade — com proximidade, estratégia e excelência.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 Desde o início, o compromisso foi claro: atuar como parceira estratégica dos nossos clientes, contribuindo 
                 diretamente para o crescimento sustentável de cada empresa atendida.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-gray-700 leading-relaxed">
                 Com uma atuação sólida, ética e inovadora, a Império vem conquistando espaço e confiança no mercado, 
                 tornando-se referência em soluções contábeis e consultivas.
               </p>
@@ -96,7 +96,7 @@ const AboutSection = () => {
 
             <div className="bg-white p-6 rounded-lg shadow-md border border-primary/10">
               <h4 className="font-bold text-lg mb-3 text-primary">Nossa Missão</h4>
-              <p className="text-muted-foreground">
+              <p className="text-gray-700">
                 Oferecer serviços contábeis e consultorias personalizadas, com excelência, transparência e foco em resultados, 
                 ajudando nossos clientes a crescer com segurança, organização e visão estratégica.
               </p>
@@ -117,11 +117,11 @@ const AboutSection = () => {
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="p-4 bg-primary/5 rounded-lg">
                   <div className="text-2xl font-bold text-primary">+100</div>
-                  <div className="text-sm text-muted-foreground">Empresas Atendidas</div>
+                  <div className="text-sm text-gray-700">Empresas Atendidas</div>
                 </div>
                 <div className="p-4 bg-primary/5 rounded-lg">
                   <div className="text-2xl font-bold text-primary">24/7</div>
-                  <div className="text-sm text-muted-foreground">Suporte Disponível</div>
+                  <div className="text-sm text-gray-700">Suporte Disponível</div>
                 </div>
               </div>
             </div>
@@ -129,7 +129,7 @@ const AboutSection = () => {
         </div>
 
         <div>
-          <h3 className="text-2xl font-bold text-center mb-12 animate-on-scroll">
+          <h3 className="text-2xl font-bold text-center mb-12 animate-on-scroll text-gray-900">
             Nossos <span className="text-primary">Valores</span>
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -160,8 +160,8 @@ const ValueCard = ({ icon, title, description, index }: ValueCardProps) => (
   <Card className={`animate-on-scroll service-card border border-primary/10 shadow-md hover:shadow-lg transition-all duration-300 [animation-delay:${index * 100}ms]`}>
     <CardContent className="p-6 text-center">
       <div className="mb-4 flex justify-center">{icon}</div>
-      <h4 className="text-lg font-bold mb-2 text-foreground">{title}</h4>
-      <p className="text-muted-foreground text-sm leading-relaxed">{description}</p>
+      <h4 className="text-lg font-bold mb-2 text-gray-900">{title}</h4>
+      <p className="text-gray-700 text-sm leading-relaxed">{description}</p>
     </CardContent>
   </Card>
 );

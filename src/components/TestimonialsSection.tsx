@@ -5,28 +5,28 @@ import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: "João Henrique Silva",
-    company: "Fazenda Santa Rita",
+    name: "Carlos Eduardo Santos",
+    company: "Comércio Santos & Filhos",
     image: "/placeholder.svg",
-    text: "A AgroTech transformou nossa operação de plantio. Os implementos que adquirimos aumentaram nossa produtividade em 30% e a assistência técnica é excepcional. Recomendo para todos os produtores da região."
+    text: "A Império transformou a gestão contábil da nossa empresa. Os serviços que contratamos aumentaram nossa organização em 40% e o atendimento é excepcional. Recomendo para todos os empresários da região."
   },
   {
     name: "Maria Fernanda Costa",
-    company: "Agropecuária Três Irmãos",
+    company: "Restaurante Três Irmãos",
     image: "/placeholder.svg",
-    text: "Trabalho com a AgroTech há mais de 5 anos e nunca me decepcionaram. Equipamentos de primeira qualidade, preços justos e um atendimento que realmente entende as necessidades do campo."
+    text: "Trabalho com a Império há mais de 3 anos e nunca me decepcionaram. Serviços de primeira qualidade, preços justos e um atendimento que realmente entende as necessidades do meu negócio."
   },
   {
     name: "Roberto Almeida",
-    company: "Fazenda Boa Vista",
+    company: "Construtora Boa Vista",
     image: "/placeholder.svg",
-    text: "Os tratores e implementos que compramos da AgroTech têm sido fundamentais para o sucesso da nossa safra. A equipe técnica nos orientou na escolha certa e o suporte pós-venda é exemplar."
+    text: "A consultoria e os serviços contábeis da Império têm sido fundamentais para o sucesso da nossa empresa. A equipe nos orientou nas melhores decisões e o suporte é exemplar."
   },
   {
-    name: "Carlos Eduardo Souza",
-    company: "Sítio Esperança Verde",
+    name: "Ana Paula Oliveira",
+    company: "Loja Esperança Verde",
     image: "/placeholder.svg",
-    text: "Como pequeno produtor, encontrei na AgroTech um parceiro que oferece soluções adequadas ao meu orçamento. Consegui modernizar minha propriedade com equipamentos de qualidade e financiamento facilitado."
+    text: "Como pequena empresária, encontrei na Império um parceiro que oferece soluções adequadas ao meu orçamento. Consegui organizar minha empresa com serviços de qualidade e atendimento facilitado."
   }
 ];
 
@@ -91,12 +91,12 @@ const TestimonialsSection = () => {
           <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4 animate-on-scroll">
             Depoimentos
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-on-scroll">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-on-scroll text-gray-900">
             O Que Nossos Clientes Dizem
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto animate-on-scroll">
-            Atendimento especializado e equipamentos de qualidade são nossa marca registrada.
-            Veja o que nossos parceiros do agronegócio têm a dizer sobre nossos serviços.
+          <p className="text-gray-700 max-w-2xl mx-auto animate-on-scroll">
+            Atendimento especializado e serviços de qualidade são nossa marca registrada.
+            Veja o que nossos parceiros empresariais têm a dizer sobre nossos serviços.
           </p>
         </div>
 
@@ -112,7 +112,7 @@ const TestimonialsSection = () => {
           <div className="flex justify-center mt-10 space-x-4">
             <button
               onClick={handlePrev}
-              className="p-3 rounded-full bg-white shadow-md border border-gray-200 text-foreground hover:bg-gray-50 transition-colors"
+              className="p-3 rounded-full bg-white shadow-md border border-gray-200 text-gray-900 hover:bg-gray-50 transition-colors"
               aria-label="Depoimento anterior"
             >
               <ChevronLeft size={20} />
@@ -138,7 +138,7 @@ const TestimonialsSection = () => {
             
             <button
               onClick={handleNext}
-              className="p-3 rounded-full bg-white shadow-md border border-gray-200 text-foreground hover:bg-gray-50 transition-colors"
+              className="p-3 rounded-full bg-white shadow-md border border-gray-200 text-gray-900 hover:bg-gray-50 transition-colors"
               aria-label="Próximo depoimento"
             >
               <ChevronRight size={20} />
@@ -166,7 +166,7 @@ const TestimonialCard = ({ testimonial }: TestimonialCardProps) => (
         <Quote size={32} />
       </div>
       
-      <p className="text-foreground mb-6 flex-grow">{testimonial.text}</p>
+      <p className="text-gray-700 mb-6 flex-grow">{testimonial.text}</p>
       
       <div className="flex items-center">
         <div className="w-12 h-12 rounded-full overflow-hidden mr-4 bg-gray-200">
@@ -177,8 +177,8 @@ const TestimonialCard = ({ testimonial }: TestimonialCardProps) => (
           />
         </div>
         <div>
-          <h4 className="font-bold text-foreground">{testimonial.name}</h4>
-          <p className="text-sm text-muted-foreground">{testimonial.company}</p>
+          <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
+          <p className="text-sm text-gray-700">{testimonial.company}</p>
         </div>
       </div>
     </CardContent>
