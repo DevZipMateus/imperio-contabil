@@ -20,6 +20,9 @@ const Footer = () => {
             <p className="text-white/80 max-w-xs">
               Especialistas em contabilidade empresarial e consultoria estratégica para o crescimento do seu negócio.
             </p>
+            <p className="text-white/70 text-sm">
+              CNPJ: 12.345.678/0001-90
+            </p>
             <div className="flex space-x-4 mt-6">
               <FooterSocialLink href="#" aria-label="Facebook" />
               <FooterSocialLink href="#" aria-label="Instagram" />
