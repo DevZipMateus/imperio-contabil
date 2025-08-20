@@ -1,17 +1,13 @@
-
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, ArrowRight, Calculator, TrendingUp, Shield } from 'lucide-react';
-
 const HeroSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     if (sectionRef.current) {
       sectionRef.current.classList.add('animate-fade-in');
     }
   }, []);
-
   const scrollToNextSection = () => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
@@ -20,21 +16,15 @@ const HeroSection = () => {
       });
     }
   };
-
   const handleWhatsAppClick = () => {
     window.open('https://wa.me/557388607687?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20contábeis%20da%20Império.', '_blank');
   };
-
-  return (
-    <section id="hero" ref={sectionRef} className="relative min-h-screen flex items-center justify-center pt-16 md:pt-20">
+  return <section id="hero" ref={sectionRef} className="relative min-h-screen flex items-center justify-center pt-16 md:pt-20">
       {/* Background with enhanced overlay */}
       <div className="absolute inset-0 z-0">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80')`
-          }}
-        ></div>
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80')`
+      }}></div>
         {/* Enhanced dark overlay for better text contrast */}
         <div className="absolute inset-0 bg-black/70"></div>
         {/* Golden accent overlay */}
@@ -61,20 +51,13 @@ const HeroSection = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 animate-slide-up [animation-delay:900ms] mb-6 md:mb-8 justify-center lg:justify-start">
-                <Button 
-                  size="lg" 
-                  onClick={handleWhatsAppClick}
-                  className="cta-button bg-golden-gradient hover:shadow-golden text-primary-foreground rounded-md group font-semibold text-sm md:text-base px-6 md:px-8 py-3 md:py-4 golden-shimmer"
-                >
+                <Button size="lg" onClick={handleWhatsAppClick} className="cta-button bg-golden-gradient hover:shadow-golden text-primary-foreground rounded-md group font-semibold text-sm md:text-base px-6 md:px-8 py-3 md:py-4 golden-shimmer">
                   Solicitar Orçamento
                   <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="border-primary/50 text-white hover:bg-primary/10 hover:border-primary backdrop-blur-sm text-sm md:text-base px-6 md:px-8 py-3 md:py-4 transition-all duration-300 hover:shadow-golden-elegant"
-                  onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-                >
+                <Button size="lg" variant="outline" className="border-primary/50 text-white hover:bg-primary/10 hover:border-primary backdrop-blur-sm text-sm md:text-base px-6 md:px-8 py-3 md:py-4 transition-all duration-300 hover:shadow-golden-elegant" onClick={() => document.getElementById('services')?.scrollIntoView({
+                behavior: 'smooth'
+              })}>
                   Nossos Serviços
                 </Button>
               </div>
@@ -97,11 +80,7 @@ const HeroSection = () => {
 
             <div className="hidden lg:flex justify-center items-center animate-slide-up [animation-delay:800ms]">
               <div className="relative">
-                <img 
-                  src="/lovable-uploads/7dafdbb3-ccc1-476d-a3d7-a1caf65e5dc9.png"
-                  alt="Império Contabilidade" 
-                  className="relative z-10 w-96 h-96 xl:w-[30rem] xl:h-[30rem] 2xl:w-[36rem] 2xl:h-[36rem] object-contain drop-shadow-2xl"
-                />
+                
               </div>
             </div>
           </div>
@@ -109,14 +88,9 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll down indicator with golden accent */}
-      <div 
-        className="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 text-primary cursor-pointer animate-bounce golden-icon" 
-        onClick={scrollToNextSection}
-      >
+      <div className="absolute bottom-6 md:bottom-8 left-1/2 transform -translate-x-1/2 text-primary cursor-pointer animate-bounce golden-icon" onClick={scrollToNextSection}>
         <ChevronDown size={28} className="md:w-8 md:h-8" />
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
