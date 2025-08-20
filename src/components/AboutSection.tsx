@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Target, Heart, Award, Handshake, TrendingUp, Users } from 'lucide-react';
+
 const AboutSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -92,7 +93,7 @@ const AboutSection = () => {
             <div className="absolute inset-0 bg-primary/10 rounded-2xl blur-3xl"></div>
             <div className="relative bg-white p-8 rounded-2xl shadow-lg border border-primary/10">
               <div className="text-center mb-6">
-                <img src="/lovable-uploads/dacc99de-aa0c-4c37-ad6f-7a225d124757.png" alt="Império Contabilidade" className="w-32 h-32 mx-auto object-contain mb-4" />
+                <img src="/lovable-uploads/f2d7bdb4-eb3f-41b1-9439-9b216e87485b.png" alt="Império Contabilidade" className="w-32 h-32 mx-auto object-contain mb-4" />
                 <h4 className="text-xl font-bold text-primary">A força que seu negócio precisa</h4>
               </div>
               <div className="grid grid-cols-2 gap-4 text-center">
@@ -120,12 +121,14 @@ const AboutSection = () => {
       </div>
     </section>;
 };
+
 interface ValueCardProps {
   icon: React.ReactNode;
   title: string;
   description: string;
   index: number;
 }
+
 const ValueCard = ({
   icon,
   title,
@@ -138,4 +141,5 @@ const ValueCard = ({
       <p className="text-sm leading-relaxed text-gray-50">{description}</p>
     </CardContent>
   </Card>;
+
 export default AboutSection;

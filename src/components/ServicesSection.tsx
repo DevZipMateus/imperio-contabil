@@ -129,7 +129,7 @@ const ServicesSection = () => {
             <div className="relative order-first lg:order-last">
               <div className="absolute inset-0 bg-primary/20 rounded-2xl blur-3xl"></div>
               <img 
-                src="/lovable-uploads/dacc99de-aa0c-4c37-ad6f-7a225d124757.png" 
+                src="/lovable-uploads/f2d7bdb4-eb3f-41b1-9439-9b216e87485b.png" 
                 alt="Império Contabilidade" 
                 className="relative z-10 w-full max-w-sm md:max-w-md mx-auto object-contain" 
               />
