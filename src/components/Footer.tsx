@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { ChevronUp } from 'lucide-react';
 
@@ -45,7 +46,7 @@ const Footer = () => {
             <ul className="space-y-3 text-white/80">
               <li>(73) 8860-7687</li>
               <li>imperiocontabilof@gmail.com</li>
-              <li>Rua Exemplo, 123 - São Paulo - SP</li>
+              <li>Castro Alves, 98</li>
               <li>Segunda a Sexta, 8h às 18h</li>
               <li>Sábado, 8h às 12h</li>
             </ul>

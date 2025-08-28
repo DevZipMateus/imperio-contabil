@@ -37,7 +37,7 @@ const ContactSection = () => {
   }, {
     icon: <MapPin className="h-5 w-5 text-primary" />,
     title: "Endereço",
-    details: "Av. Afonso Pena, 1000, Campo Grande - MS",
+    details: "Castro Alves, 98",
     link: "https://maps.google.com"
   }, {
     icon: <Clock className="h-5 w-5 text-primary" />,
