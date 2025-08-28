@@ -75,6 +75,10 @@ const ServicesSection = () => {
     window.open('https://wa.me/557388607687?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20contábeis%20da%20Império.', '_blank');
   };
 
+  const handleMudarContadorClick = () => {
+    window.open('https://wa.me/557388607687?text=Olá!%20Gostaria%20de%20mudar%20de%20contador%20para%20a%20Império%20Contabilidade.', '_blank');
+  };
+
   return (
     <section id="services" ref={sectionRef} className="section-padding bg-white">
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
