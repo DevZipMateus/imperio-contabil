@@ -103,17 +103,17 @@ const ServicesSection = () => {
           ))}
         </div>
 
-        <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-6 md:p-8 lg:p-12 animate-on-scroll">
+        <div className="bg-black rounded-2xl p-6 md:p-8 lg:p-12 animate-on-scroll">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6 text-gray-900">
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6 text-white">
                 Nossos <span className="text-primary">diferenciais</span>
               </h3>
               <div className="space-y-4 mb-6 md:mb-8">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-gray-900 text-sm md:text-base leading-relaxed">{feature}</span>
+                    <span className="text-white text-sm md:text-base leading-relaxed">{feature}</span>
                   </div>
                 ))}
               </div>
