@@ -64,12 +64,11 @@ const ServicesSection = () => {
   ];
 
   const features = [
-    "Atendimento personalizado",
-    "Suporte contínuo", 
-    "Tecnologia de ponta",
-    "Equipe especializada",
-    "Conformidade garantida",
-    "Resultados comprovados"
+    "Atendimento personalizado – entendemos as necessidades específicas da sua empresa, seja comércio, serviço ou indústria.",
+    "Agilidade e tecnologia – utilizamos ferramentas modernas que tornam os processos contábeis mais rápidos, seguros e práticos.", 
+    "Transparência e confiança – você terá acesso claro e objetivo às informações financeiras e fiscais.",
+    "Planejamento estratégico – ajudamos na tomada de decisões, reduzindo custos e maximizando resultados.",
+    "Suporte completo – desde a abertura da empresa até a gestão tributária e consultoria para expansão."
   ];
 
   const handleWhatsAppClick = () => {
@@ -108,17 +107,13 @@ const ServicesSection = () => {
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 md:mb-6 text-gray-900">
-                Por que escolher a <span className="text-primary">Império</span>?
+                Nossos <span className="text-primary">diferenciais</span>
               </h3>
-              <p className="text-gray-700 mb-6 md:mb-8 text-base md:text-lg leading-relaxed">
-                Nossa experiência e dedicação fazem toda a diferença no crescimento do seu negócio. 
-                Trabalhamos como parceiros estratégicos para seu sucesso.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-6 md:mb-8">
+              <div className="space-y-4 mb-6 md:mb-8">
                 {features.map((feature, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <CheckCircle className="h-4 w-4 md:h-5 md:w-5 text-primary flex-shrink-0" />
-                    <span className="text-gray-900 font-medium text-sm md:text-base">{feature}</span>
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-900 text-sm md:text-base leading-relaxed">{feature}</span>
                   </div>
                 ))}
               </div>
