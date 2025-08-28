@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -29,37 +30,44 @@ const ServicesSection = () => {
     {
       icon: <Calculator className="h-10 w-10 md:h-12 md:w-12 text-primary" />,
       title: "Contabilidade Geral",
-      description: "Cuidamos de todas as obrigações contábeis, desde cálculo de impostos até declarações junto à Receita Federal, estadual e prefeitura."
+      description: "Cuidamos de todas as obrigações contábeis, desde cálculo de impostos até declarações junto à Receita Federal, estadual e prefeitura.",
+      hasButton: false
     },
     {
       icon: <FileText className="h-10 w-10 md:h-12 md:w-12 text-primary" />,
       title: "Gestão Fiscal",
-      description: "Controle total das obrigações fiscais, garantindo conformidade e otimização da carga tributária da sua empresa."
+      description: "Controle total das obrigações fiscais, garantindo conformidade e otimização da carga tributária da sua empresa.",
+      hasButton: false
     },
     {
       icon: <Building className="h-10 w-10 md:h-12 md:w-12 text-primary" />,
       title: "Abertura de Empresas",
-      description: "Simplificamos todo o processo de abertura e legalização de empresas, cuidando da burocracia para você."
+      description: "Simplificamos todo o processo de abertura e legalização de empresas, cuidando da burocracia para você.",
+      hasButton: false
     },
     {
       icon: <Shield className="h-10 w-10 md:h-12 md:w-12 text-primary" />,
       title: "Consultoria Tributária",
-      description: "Orientação especializada para tomadas de decisão estratégicas, maximizando resultados e minimizando riscos."
+      description: "Orientação especializada para tomadas de decisão estratégicas, maximizando resultados e minimizando riscos.",
+      hasButton: false
     },
     {
       icon: <Users className="h-10 w-10 md:h-12 md:w-12 text-primary" />,
       title: "Departamento Pessoal",
-      description: "Gestão completa de folha de pagamento, admissões, demissões e toda rotina trabalhista da sua empresa."
+      description: "Gestão completa de folha de pagamento, admissões, demissões e toda rotina trabalhista da sua empresa.",
+      hasButton: false
     },
     {
       icon: <TrendingUp className="h-10 w-10 md:h-12 md:w-12 text-primary" />,
       title: "Planejamento Financeiro",
-      description: "Análises financeiras e planejamento estratégico para o crescimento sustentável do seu negócio."
+      description: "Análises financeiras e planejamento estratégico para o crescimento sustentável do seu negócio.",
+      hasButton: false
     },
     {
       icon: <RefreshCw className="h-10 w-10 md:h-12 md:w-12 text-primary" />,
       title: "Mudar de Contador",
-      description: "Facilitamos a transição da sua contabilidade para nosso escritório, cuidando de toda a documentação e processos."
+      description: "Facilitamos a transição da sua contabilidade para nosso escritório, cuidando de toda a documentação e processos.",
+      hasButton: true
     }
   ];
 
@@ -103,6 +111,8 @@ const ServicesSection = () => {
               title={service.title}
               description={service.description}
               index={index}
+              hasButton={service.hasButton}
+              onButtonClick={service.hasButton ? handleMudarContadorClick : undefined}
             />
           ))}
         </div>
@@ -150,14 +160,26 @@ interface ServiceCardProps {
   title: string;
   description: string;
   index: number;
+  hasButton?: boolean;
+  onButtonClick?: () => void;
 }
 
-const ServiceCard = ({ icon, title, description, index }: ServiceCardProps) => (
+const ServiceCard = ({ icon, title, description, index, hasButton, onButtonClick }: ServiceCardProps) => (
   <Card className={`animate-on-scroll service-card border border-primary/10 shadow-md hover:shadow-lg transition-all duration-300 h-full [animation-delay:${index * 100}ms]`}>
     <CardContent className="p-6 md:p-8 flex flex-col items-center text-center h-full">
       <div className="mb-4 md:mb-6 p-3 md:p-4 bg-primary/10 rounded-full">{icon}</div>
       <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4 text-gray-50">{title}</h3>
-      <p className="leading-relaxed flex-grow text-gray-50 text-sm md:text-base">{description}</p>
+      <p className="leading-relaxed flex-grow text-gray-50 text-sm md:text-base mb-4">{description}</p>
+      {hasButton && onButtonClick && (
+        <Button 
+          onClick={onButtonClick}
+          className="bg-primary hover:bg-primary/90 text-accent-foreground font-semibold mt-auto"
+          size="sm"
+        >
+          Mudar Agora
+          <ArrowRight className="ml-2 h-4 w-4" />
+        </Button>
+      )}
     </CardContent>
   </Card>
 );
