@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Target, Heart, Award, Handshake, TrendingUp, Users } from 'lucide-react';
-
 const AboutSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -52,7 +51,7 @@ const AboutSection = () => {
             Sobre a Império
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll text-gray-50">
-            Por que a <span className="text-primary">Imperio</span> como sua <span className="text-primary">contabilidade</span>?
+            Construindo <span className="text-primary">Império</span> e Impulsionando <span className="text-primary">Sonhos</span>
           </h2>
           <p className="max-w-3xl mx-auto text-lg animate-on-scroll leading-relaxed text-gray-50">
             A Império Contabilidade e Consultoria nasceu com o propósito de oferecer mais do que serviços contábeis: 
@@ -121,14 +120,12 @@ const AboutSection = () => {
       </div>
     </section>;
 };
-
 interface ValueCardProps {
   icon: React.ReactNode;
   title: string;
   description: string;
   index: number;
 }
-
 const ValueCard = ({
   icon,
   title,
@@ -141,5 +138,4 @@ const ValueCard = ({
       <p className="text-sm leading-relaxed text-gray-50">{description}</p>
     </CardContent>
   </Card>;
-
 export default AboutSection;
