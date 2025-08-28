@@ -32,8 +32,8 @@ const ContactSection = () => {
   }, {
     icon: <Mail className="h-5 w-5 text-primary" />,
     title: "E-mail",
-    details: "contato@imperiocontabilidade.com.br",
-    link: "mailto:contato@imperiocontabilidade.com.br"
+    details: "imperiocontabilof@gmail.com",
+    link: "mailto:imperiocontabilof@gmail.com"
   }, {
     icon: <MapPin className="h-5 w-5 text-primary" />,
     title: "Endereço",

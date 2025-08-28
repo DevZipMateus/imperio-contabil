@@ -44,7 +44,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contato</h4>
             <ul className="space-y-3 text-white/80">
               <li>(73) 8860-7687</li>
-              <li>contato@imperiocontabilidade.com.br</li>
+              <li>imperiocontabilof@gmail.com</li>
               <li>Rua Exemplo, 123 - São Paulo - SP</li>
               <li>Segunda a Sexta, 8h às 18h</li>
               <li>Sábado, 8h às 12h</li>
