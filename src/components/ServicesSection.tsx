@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { FileText, Calculator, Building, Shield, Users, TrendingUp, ArrowRight, CheckCircle } from 'lucide-react';
+import { FileText, Calculator, Building, Shield, Users, TrendingUp, ArrowRight, CheckCircle, RefreshCw } from 'lucide-react';
 
 const ServicesSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -55,12 +55,17 @@ const ServicesSection = () => {
       icon: <TrendingUp className="h-10 w-10 md:h-12 md:w-12 text-primary" />,
       title: "Planejamento Financeiro",
       description: "Análises financeiras e planejamento estratégico para o crescimento sustentável do seu negócio."
+    },
+    {
+      icon: <RefreshCw className="h-10 w-10 md:h-12 md:w-12 text-primary" />,
+      title: "Mudar de Contador",
+      description: "Facilitamos a transição da sua contabilidade para nosso escritório, cuidando de toda a documentação e processos."
     }
   ];
 
   const features = [
     "Atendimento personalizado",
-    "Suporte contínuo",
+    "Suporte contínuo", 
     "Tecnologia de ponta",
     "Equipe especializada",
     "Conformidade garantida",
