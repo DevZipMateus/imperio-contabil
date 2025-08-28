@@ -28,7 +28,7 @@ const HeroSection = () => {
         {/* Enhanced dark overlay for better text contrast */}
         <div className="absolute inset-0 bg-black/70"></div>
         {/* Golden accent overlay */}
-        <div className="absolute inset-0 bg-golden-radial opacity-20"></div>
+        <div className="absolute inset-0 bg-golden-radial opacity-20 bg-white"></div>
       </div>
 
       <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
