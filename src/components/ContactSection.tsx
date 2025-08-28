@@ -113,22 +113,6 @@ const ContactSection = () => {
             </CardContent>
           </Card>
         </div>
-
-        <div className="mt-16 animate-on-scroll">
-          <Card className="border border-border/50 shadow-card overflow-hidden">
-            <div className="h-[400px] w-full">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3739.123456789!2d-54.6164919!3d-20.4629581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e1b123456789%3A0x123456789abcdef!2sAv.%20Afonso%20Pena%2C%20Campo%20Grande%20-%20MS!5e0!3m2!1spt-BR!2sbr!4v1627909542948!5m2!1spt-BR!2sbr" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy" 
-                title="Mapa de localização - Império Contabilidade"
-              ></iframe>
-            </div>
-          </Card>
-        </div>
       </div>
     </section>;
 };
