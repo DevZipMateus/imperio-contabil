@@ -40,7 +40,7 @@ const HeroSection = () => {
               </span>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight animate-slide-up [animation-delay:500ms]">
-                <span className="gold-gradient-text">IMPÉRIO</span><br />
+                <br />
                 Contabilidade &<br />
                 <span className="gold-gradient-text">Consultoria</span>
               </h1>
