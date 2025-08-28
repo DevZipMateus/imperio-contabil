@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Target, Heart, Award, Handshake, TrendingUp, Users } from 'lucide-react';
+
 const AboutSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -89,7 +90,7 @@ const AboutSection = () => {
 
           <div className="relative animate-on-scroll">
             <div className="absolute inset-0 bg-primary/10 rounded-2xl blur-3xl"></div>
-            <div className="relative bg-white p-8 rounded-2xl shadow-lg border border-primary/10">
+            <div className="relative bg-black p-8 rounded-2xl shadow-lg border border-primary/10">
               <div className="text-center mb-6">
                 <img src="/lovable-uploads/f2d7bdb4-eb3f-41b1-9439-9b216e87485b.png" alt="Império Contabilidade" className="w-32 h-32 mx-auto object-contain mb-4" />
                 <h4 className="text-xl font-bold text-primary">A força que seu negócio precisa</h4>
@@ -97,11 +98,11 @@ const AboutSection = () => {
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="p-4 bg-primary/5 rounded-lg">
                   <div className="text-2xl font-bold text-primary">+100</div>
-                  <div className="text-sm text-gray-700">Empresas Atendidas</div>
+                  <div className="text-sm text-gray-300">Empresas Atendidas</div>
                 </div>
                 <div className="p-4 bg-primary/5 rounded-lg">
                   <div className="text-2xl font-bold text-primary">24/7</div>
-                  <div className="text-sm text-gray-700">Suporte Disponível</div>
+                  <div className="text-sm text-gray-300">Suporte Disponível</div>
                 </div>
               </div>
             </div>
@@ -119,12 +120,14 @@ const AboutSection = () => {
       </div>
     </section>;
 };
+
 interface ValueCardProps {
   icon: React.ReactNode;
   title: string;
   description: string;
   index: number;
 }
+
 const ValueCard = ({
   icon,
   title,
@@ -137,4 +140,5 @@ const ValueCard = ({
       <p className="text-sm leading-relaxed text-gray-50">{description}</p>
     </CardContent>
   </Card>;
+
 export default AboutSection;
