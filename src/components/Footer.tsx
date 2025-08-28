@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { ChevronUp } from 'lucide-react';
 
@@ -22,7 +21,7 @@ const Footer = () => {
               Especialistas em contabilidade empresarial e consultoria estratégica para o crescimento do seu negócio.
             </p>
             <p className="text-white/70 text-sm">
-              CNPJ: 12.345.678/0001-90
+              CNPJ: 55.363.934/0001-80
             </p>
             <div className="flex space-x-4 mt-6">
               <FooterSocialLink href="#" aria-label="Facebook" />
