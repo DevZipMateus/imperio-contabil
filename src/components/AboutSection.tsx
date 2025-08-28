@@ -52,7 +52,7 @@ const AboutSection = () => {
             Sobre a Império
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll text-gray-50">
-            Construindo <span className="text-primary">Legados</span> e Impulsionando <span className="text-primary">Sonhos</span>
+            Por que a <span className="text-primary">Imperio</span> como sua <span className="text-primary">contabilidade</span>?
           </h2>
           <p className="max-w-3xl mx-auto text-lg animate-on-scroll leading-relaxed text-gray-50">
             A Império Contabilidade e Consultoria nasceu com o propósito de oferecer mais do que serviços contábeis: 
