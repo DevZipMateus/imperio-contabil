@@ -39,11 +39,7 @@ const HeroSection = () => {
                 A força que seu negócio precisa
               </span>
               
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight animate-slide-up [animation-delay:500ms]">
-                <br />
-                Contabilidade &<br />
-                <span className="gold-gradient-text">Consultoria</span>
-              </h1>
+              
               
               <p className="text-base md:text-lg lg:text-xl text-white/90 mb-6 md:mb-8 max-w-2xl mx-auto lg:mx-0 animate-slide-up [animation-delay:700ms] leading-relaxed">
                 Oferecemos serviços contábeis personalizados com excelência, transparência e foco em resultados. 
