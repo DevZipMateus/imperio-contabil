@@ -51,11 +51,10 @@ const AboutSection = () => {
             Sobre a Império
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll text-gray-50">
-            Construindo <span className="text-primary">Império</span> e Impulsionando <span className="text-primary">Sonhos</span>
+            Por que a Imperio como sua contabilidade?
           </h2>
           <p className="max-w-3xl mx-auto text-lg animate-on-scroll leading-relaxed text-gray-50">
-            A Império Contabilidade e Consultoria nasceu com o propósito de oferecer mais do que serviços contábeis: 
-            nasceu para fortalecer negócios, construir legados e impulsionar sonhos.
+            Na Império Contabilidade e Consultoria, acreditamos que cada empresa tem uma história única e merece uma assessoria contábil feita sob medida. Nosso compromisso vai além de entregar números: queremos ser parceiros estratégicos no crescimento do seu negócio.
           </p>
         </div>
 
