@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Target, Heart, Award, Handshake, TrendingUp, Users } from 'lucide-react';
@@ -53,7 +52,7 @@ const AboutSection = () => {
             Sobre a Império
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-on-scroll text-gray-50">
-            Por que a Imperio como sua contabilidade?
+            Por que escolher a Imperio como sua contabilidade?
           </h2>
           <p className="max-w-3xl mx-auto text-lg animate-on-scroll leading-relaxed text-gray-50">
             Na Império Contabilidade e Consultoria, acreditamos que cada empresa tem uma história única e merece uma assessoria contábil feita sob medida. Nosso compromisso vai além de entregar números: queremos ser parceiros estratégicos no crescimento do seu negócio.
