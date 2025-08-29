@@ -45,7 +45,7 @@ const Footer = () => {
             <ul className="space-y-3 text-white/80">
               <li>(73) 8860-7687</li>
               <li>imperiocontabilof@gmail.com</li>
-              <li>Castro Alves, 98</li>
+              <li>Rua Castro Alves, N 98 centro Ipiaú- BA</li>
               <li>Segunda a Sexta, 8h às 18h</li>
               <li>Sábado, 8h às 12h</li>
             </ul>

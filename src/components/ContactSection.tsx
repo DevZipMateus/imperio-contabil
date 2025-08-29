@@ -37,7 +37,7 @@ const ContactSection = () => {
   }, {
     icon: <MapPin className="h-5 w-5 text-primary" />,
     title: "Endereço",
-    details: "Castro Alves, 98",
+    details: "Rua Castro Alves, N 98 centro Ipiaú- BA",
     link: "https://maps.google.com"
   }, {
     icon: <Clock className="h-5 w-5 text-primary" />,
