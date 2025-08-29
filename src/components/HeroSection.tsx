@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, ArrowRight, Calculator, TrendingUp, Shield } from 'lucide-react';
@@ -39,7 +40,9 @@ const HeroSection = () => {
                 A força que seu negócio precisa
               </span>
               
-              
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary mb-4 md:mb-6 animate-slide-up [animation-delay:500ms] golden-shimmer">
+                IMPÉRIO
+              </h1>
               
               <p className="text-base md:text-lg lg:text-xl text-white/90 mb-6 md:mb-8 max-w-2xl mx-auto lg:mx-0 animate-slide-up [animation-delay:700ms] leading-relaxed">
                 Oferecemos serviços contábeis personalizados com excelência, transparência e foco em resultados. 
