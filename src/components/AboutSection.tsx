@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Target, Heart, Award, Handshake, TrendingUp, Users } from 'lucide-react';
@@ -97,7 +98,7 @@ const AboutSection = () => {
               </div>
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="p-4 bg-primary/5 rounded-lg">
-                  <div className="text-2xl font-bold text-primary">+100</div>
+                  <div className="text-2xl font-bold text-primary">+5mil</div>
                   <div className="text-sm text-gray-300">Empresas Atendidas</div>
                 </div>
                 <div className="p-4 bg-primary/5 rounded-lg">
